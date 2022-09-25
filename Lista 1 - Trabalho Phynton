@@ -1,0 +1,28 @@
+lista = [3, 8, 'b']
+print(f"Lista inteira: {lista}")
+
+for x in lista:
+  print(x)
+  
+ R: Lista inteira: [3, 8, 'b']
+3
+8
+b
+
+
+lista = ["laranja", "azul", "verde"]
+print(lista[-1])
+
+R:verde
+
+
+a = [3, 4, 1]
+b = a
+b[0] = 9
+print(f"B: {b}")
+print(f"A: {a}")
+
+R: B: [9, 4, 1]
+A: [9, 4, 1]
+
+
