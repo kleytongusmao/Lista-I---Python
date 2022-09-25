@@ -1,0 +1,23 @@
+
+a = [22, 8, 10]
+b = [9, 21, 17]
+c = a + b
+print(f"C: {c}")
+
+C: [22, 8, 10, 9, 21, 17]
+
+
+
+a = [1, 2, 3, 4, 5]
+del a[2:4]
+print(f"A: {a}")
+
+A: [1, 2, 5]
+
+
+
+L = ["triangulo", "quadrado", "circulo", "retangulo"]
+if "triangulo" in L:
+    print("Sim, 'triangulo' esta presente na lista")
+    
+Sim, 'triangulo' esta presente na lista    
