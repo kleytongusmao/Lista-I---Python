@@ -1,28 +1,71 @@
-lista = [3, 8, 'b']
-print(f"Lista inteira: {lista}")
+tamanho = float(input('Tamanho do arquivo (MB): '))
+velocidade = float(input('Velocidade de Internet (MBps): '))
+print('Tempo aproximado de download: %.0f Minutos ' %((tamanho / velocidade) * 60))
 
-for x in lista:
-  print(x)
+Tamanho do arquivo (MB): 30
+Velocidade de Internet (MBps): 15
+Tempo aproximado de download: 120 Minutos 
+
+
+valor = int(input('Quanto voce ganha por hora: '))
+horas = int(input('Numero de horas trabalhadas no mes: '))
+salario = valor * horas
+ir = (11/100.0 * salario)
+print ('Imposto de renda: ',ir)
+inss = (8/100.0 * salario)
+print ('INSS: ',inss)
+sind = (5/100.0 * salario)
+print ('Sindicato: ',sind)
+desc = ir + inss + sind
+salarioL = salario - desc
+print ('O desconto total do salario bruto(',salario,'R$)',
+       'foi',desc,'\nO salario liquido ficou,',salarioL)
+       
+    Quanto voce ganha por hora: 20
+Numero de horas trabalhadas no mes: 100
+Imposto de renda:  220.0
+INSS:  160.0
+Sindicato:  100.0
+O desconto total do salario bruto( 2000 R$) foi 480.0 
+O salario liquido ficou, 1520.0
+> 
+
+
+
+
+tamanho = float(input('Entre com o tamanho da área: '))
+
+litros = tamanho / 6
+latas = litros / 18
+
+if latas % 18 != 0:
+    latas += 1
+preco = latas * 80
+
+galoes = litros / 3.6
+if galoes % 3.6 != 0:
+    galoes += 1
+preco2 = galoes * 25
+
+# mistura de latas e galoes
+mistura_lata = int(litros / 18.0)
+mistura_galao = int((litros - (mistura_lata * 18)) / 3.6)
+
+if litros - (mistura_lata * 18) % 3.6 != 0:
+    mistura_galao += 1
+
+print('Apenas latas de 18 litros: %d' % latas, 'preço: %d' % preco)
+print('Apenas galões de 3.6 litros: %d' % galoes, 'preço: %d' % preco2)
+print('Mistura: %d latas e %d galoes = %.2f' % (
+    mistura_lata, mistura_galao, ((mistura_lata * 80) + (mistura_galao * 25))))
+    
   
- R: Lista inteira: [3, 8, 'b']
-3
-8
-b
+  
+  
+  Entre com o tamanho da área: 6
+Apenas latas de 18 litros: 1 preço: 84
+Apenas galões de 3.6 litros: 1 preço: 31
+Mistura: 0 latas e 1 galoes = 25.00  
 
-
-lista = ["laranja", "azul", "verde"]
-print(lista[-1])
-
-R:verde
-
-
-a = [3, 4, 1]
-b = a
-b[0] = 9
-print(f"B: {b}")
-print(f"A: {a}")
-
-R: B: [9, 4, 1]
-A: [9, 4, 1]
 
 
