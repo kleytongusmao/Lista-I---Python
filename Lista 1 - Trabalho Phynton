@@ -1,3 +1,5 @@
+Lista 1:
+
 tamanho = float(input('Tamanho do arquivo (MB): '))
 velocidade = float(input('Velocidade de Internet (MBps): '))
 print('Tempo aproximado de download: %.0f Minutos ' %((tamanho / velocidade) * 60))
@@ -67,5 +69,83 @@ Apenas latas de 18 litros: 1 preço: 84
 Apenas galões de 3.6 litros: 1 preço: 31
 Mistura: 0 latas e 1 galoes = 25.00  
 
+
+Lista 2:
+
+numero = float(input('Digite um número para saber se é par ou impar:'))
+resto = numero % 2
+
+if resto == 0:
+    print('Número é par')
+else:
+    print('Número é impar')
+    
+Digite um número para saber se é par ou impar: 2
+2
+Número é par
+
+
+
+
+numero = float(input("Digite um número: "))
+if numero % 1 == 0:
+    print("Inteiro")
+else:
+    print("Decimal")
+    
+  Digite um número: 4
+Inteiro
+
+
+
+idades = []
+alturas = []
+for i in range(1, 6):
+    print('%dº Pessoa' %i)
+    idade = int(input('Digite a idade: '))
+    altura = float(input('Digite a altura: '))
+    idades.append(idade)
+    alturas.append(altura)
+
+print('Ordem inversa')
+print('Alturas')
+print(alturas[::-1])
+print('Idades')
+print(idades[::-1])
+
+print('Ordem lida')
+print('Alturas')
+print(alturas)
+
+print('Idades')
+print(idades)
+
+
+1º Pessoa
+Digite a idade: 16
+Digite a altura: 185
+2º Pessoa
+Digite a idade: 25
+Digite a altura: 199
+3º Pessoa
+Digite a idade: 31
+Digite a altura: 177
+4º Pessoa
+Digite a idade: 32
+Digite a altura: 166
+5º Pessoa
+Digite a idade: 25
+Digite a altura: 177
+Ordem inversa
+Alturas
+[177.0, 166.0, 177.0, 199.0, 185.0]
+Idades
+[25, 32, 31, 25, 16]
+Ordem lida
+Alturas
+[185.0, 199.0, 177.0, 166.0, 177.0]
+Idades
+[16, 25, 31, 32, 25]
+> 
 
 
